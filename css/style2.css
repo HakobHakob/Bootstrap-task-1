@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 12px "Montserrat", sans-serif, serif;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --price-color: #2cc179;
+  --txt-color: #878b97;
+  --bg-color: #d3d3d5;
+}
+
+/* Header and footer  */
+#header,
+#footer {
+  background-color: var(--bg-color);
+}
+
+.menu_nav {
+  padding-right: 0;
+}
+
+#menu_list li a {
+  padding-right: 0;
+}
+
+#menu_list li a:hover {
+  color: var(--orange) !important;
+}
+
+/* Main section  */
+.main_row {
+  margin-top: 50px;
+}
+
+.info_div span {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.info_div p {
+  color: var(--txt-color);
+}
+
+.monthly {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--price-color);
+}
+
+/* Carousel  */
+.big_carousel {
+  padding: 15px;
+}
+
+.carousel-item img {
+  border-radius: 10px;
+}
+
+/* Map and videos  */
+.map_video_selects {
+
+  position: relative;
+}
+
+
+.map_video_selects a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.map_video_selects::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 52%;
+  left: 60px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 13px;
+}
+
+/* Coolapse  */
+.card-body{
+  padding: 0;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.videoCard iframe{
+  border-radius: 10px;
+}
+
+
+
+
+
+.shadowed_row {
+  padding: 25px 35px;
+  margin: 25px 0;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  
+}
+
+@media screen and (max-width: 992px) {
+  .shadowed_row {
+    padding: 25px 15px;
+  }
+}
+
+
+
+
+
+.info_title  {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.shadowed_row ul {
+  line-height: 20px;
+  max-width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Main section bottom part  */
+/* .call_link{
+  padding: 0 20px;
+} */
+
+.call_link a{  
+  background-color: var(--yellow);
+  color: var(--dark);
+  border-radius: 50px;
+  display: block;
+  padding: 10px 0 10px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10px;
+  max-width: 150px;
+
+}
+
+@media screen and (max-width: 576px) {
+  .call_link a {
+    font-size: 9px;
+    width: 130px;
+  }
+}
+
+
+
+.call_link a:before{
+  content: "\f232";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+  display: block !important;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  font-size: 13px;
+}
+
+
+.viber{
+  margin-bottom: 20px;
+}
+
+.rent_text,.price_info{
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.rent_text{
+  
+  padding: 0 15px;
+}
+
+.price_info{
+  font-weight: bold;
+}
+
+.price_info span{
+  color: var(--price-color) ;
+}
+
+
+.main_section_icon{
+  margin: 12px 0 0 15px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .main_section_icon{
+   display: none;
+  }
+}
+
+
+
+.price_icon{
+  display: none;
+  margin: 12px 0 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .price_icon{
+   display: block;
+  }
+}
+
+
+
+
+
+
+
+/* Page footer  */
+
+.footer_left {
+  padding: 0;
+}
+
+#footer ul {
+  list-style: none;
+  line-height: 25px;
+  padding-inline-start: 0;
+}
+#footer li:not(.footer_first_list li):hover {
+  color: var(--orange);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .footer_list {
+    display: none !important;
+  }
+}
+span {
+  font-weight: bold;
+}
+
+.footer_social ul {
+  margin: 10px 0;
+}
+
+.footer_social  a{
+  text-decoration: none !important;
+}
+
+.footer_social i {
+  font: 12px/1 FontAwesome;
+  color: var(--white);
+  background-color: var(--gray);
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.footer_social i:hover {
+  color: var(--orange);
+}
+
+.footer_social i:not(#fb) {
+  margin-left: 12px;
+}
+
+#fb,
+#insta {
+  padding: 8px 10px;
+}
+#in,
+#pi {
+  padding: 8px 9px;
+}
+
+.allRights p {
+  font-size: 11px;
+  color: var(--txt-color);
+}
